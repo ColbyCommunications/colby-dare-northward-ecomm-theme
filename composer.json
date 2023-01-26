@@ -1,0 +1,21 @@
+{
+    "name": "colbycommunications/colby-dare-northward-ecomm-theme",
+    "description": "Dare Northward ecommerce theme",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Brandon Waltz",
+            "email": "brandon.waltz@colby.edu"
+        },
+        {
+            "name": "Terminal Agency",
+            "email": "dobrzanski.andrew@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "keywords": [
+        "wordpress"
+    ]
+}
