@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Swiss721 BT Regular";
+	src: url("../fonts/Swiss721_BT_Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Italic";
+	src: url("../fonts/Swiss721_BT_Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Bold";
+	src: url("../fonts/Swiss721_BT_Bold.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Bold Italic";
+	src: url("../fonts/Swiss721_BT_Bold_Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Light";
+	src: url("../fonts/Swiss721_BT_Light.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Light Italic";
+	src: url("../fonts/Swiss721_BT_Light_Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Thin";
+	src: url("../fonts/Swiss721_BT_Thin.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Swiss721 BT Thin Italic";
+	src: url("../fonts/Swiss721_BT_Thin_Italic.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Victor Serif Regular";
+	src: url("../fonts/VictorSerif_Regular.otf");
+}
+
+@font-face {
+	font-family: "Victor Serif Italic";
+	src: url("../fonts/VictorSerif_Regular_Italic.otf");
+}
+
+@font-face {
+	font-family: "Victor Serif Thin";
+	src: url("../fonts/VictorSerif_Thin.otf");
+}
+
+@font-face {
+	font-family: "Victor Serif Thin Italic";
+	src: url("../fonts/VictorSerif_Thin_Italic.otf");
+}

@@ -1,0 +1,191 @@
+/*--------------------------------------------------------------
+# Woocommerce Overrides
+--------------------------------------------------------------*/
+.entry-content .woocommerce {
+	max-width: 1600px;
+	margin: 100px auto 20px auto;
+	padding: 0 20px;
+}
+
+.woocommerce ul {
+	margin-left: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.woocommerce .page-content {
+	clear: both;
+}
+
+/* Buttons
+--------------------------------------------- */
+/* Proceed to checkout */
+.woocommerce .wc-proceed-to-checkout a.checkout-button {
+	background-color: var(--primary);
+}
+
+.woocommerce .wc-proceed-to-checkout a.checkout-button:hover,
+.woocommerce div.product form.cart .button:hover {
+	background-color: var(--secondary);
+}
+
+/* Add to cart */
+.woocommerce div.product form.cart .button {
+	background-color: var(--primary);
+	height: 72px;
+	width: 300px;
+}
+
+/* QTY increment counter */
+.summary.entry-summary form.cart .qib-container + button[type='submit']:not(#qib_id):not(#qib_id) {
+	margin-left: 0;
+}
+/* .woocommerce div.product form.cart div.quantity {
+	float: none;
+}
+
+.woocommerce .quantity .qty {
+	height: 72px;
+	width: 110px;
+} */
+
+/* Products
+--------------------------------------------- */
+/* Product title */
+.product-title {
+	letter-spacing: 5px;
+}
+
+/* Product image on PDP */
+.woocommerce-product-gallery__image {
+    pointer-events: none;
+}
+
+/* Product thumbnails on PDP */
+.woocommerce div.product div.images .flex-control-thumbs {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+	height: auto;
+	margin: 6px;
+	width: 150px;
+}
+
+/* Product price on PDP */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+	color: var(--primary);
+	font-family: "Victor Serif Thin";
+	font-size: 50px;
+	margin: 0 0 30px 0;
+}
+
+/* Product grid */
+.wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image) {
+	margin-bottom: 0;
+}
+
+:where(.wp-block-columns.is-layout-flex) {
+    gap: 1em;
+}
+
+.wc-block-grid__products {
+	row-gap: 1rem;
+}
+
+/* Handed Picked Block Title */
+.wc-block-grid__product-title {
+	background-color: var(--primary);
+	color: #fff;
+	display: none;
+	font-family: "Victor Serif Italic";
+	font-size: 20px;
+	padding: 20px 35px;
+	position: absolute;
+	text-align: left;
+	top: 50%;
+    width: 75%;
+}
+
+.wc-block-grid__product:hover .wc-block-grid__product-title {
+	display: block;
+}
+
+/* QTY heading */
+.woocommerce div.product div.summary div.quantity h3 {
+	font-size: 26px;
+}
+
+/* Hides magnifying glass on product images */
+.woocommerce div.product div.images .woocommerce-product-gallery__trigger {
+    visibility: hidden;
+}
+
+/* QTY increment plugin */
+.qib-button:not(#qib_id):not(#qib_id) {
+	background: var(--primary) !important;
+}
+
+.cart .qib-container {
+	margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+    /* Product image container on PDP */
+	.woocommerce-product-gallery {
+		border-right: 3px solid var(--primary);
+	}
+}
+
+@media (max-width: 991px) {
+	/* Variation swatches plugin */
+	.woocommerce div.product form.cart .variations th {
+		text-align: left;
+	}
+}
+
+@media (min-width: 992px) {
+    /* Product grid title */
+	.wc-block-grid__product-title {
+		font-size: 30px;
+	}
+	
+    /* Product image viewport on PDP */
+	.flex-viewport {
+		width: 90%;
+	}
+	
+    /* Product image on PDP */
+	.woocommerce #content div.product div.images,
+	.woocommerce div.product div.images,
+	.woocommerce-page #content div.product div.images,
+	.woocommerce-page div.product div.images {
+		width: 60%;
+	}
+
+    /* Product summary on PDP */
+	.woocommerce #content div.product div.summary,
+	.woocommerce div.product div.summary,
+	.woocommerce-page #content div.product div.summary,
+	.woocommerce-page div.product div.summary {
+		align-items: flex-end;
+		display: flex;
+		flex-flow: column;
+		text-align: right;
+		width: 24%;
+	}
+	
+	/* Product price on PDP */
+	.woocommerce div.product p.price,
+    .woocommerce div.product span.price {
+		font-size: 56px;
+	}
+	
+	/* Variation swatches plugin */
+	.woo-variation-swatches .variable-items-wrapper {
+		justify-content: flex-end;
+	}
+}

@@ -1,0 +1,49 @@
+/* About section */
+.about {
+	padding: 40px 20px;
+}
+
+.about > div {
+	border: 5px solid #fff;
+	color: #fff;
+	padding: 40px;
+	max-width: 1740px;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+.about h2 {
+	line-height: 1;
+}
+
+.about h2:first-line {
+	font-family: "Victor Serif Thin Italic";
+}
+
+.about .wp-block-columns {
+	justify-content: center;
+}
+
+@media (min-width: 768px) {
+	.about {
+		padding: 80px 40px;
+	}
+	
+	.about p {
+		margin: 1.5em 0 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.about h2 {
+		font-size: 86px;
+	}
+	
+	.about h2:first-line {
+		font-size: 60px;
+	}
+	
+	.about p {
+		font-size: 24px;
+	}
+}
