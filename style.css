@@ -57,7 +57,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--dk-blue: #12223E;
 	--baige: #FBF8EA;
 	--tan: #C0885B;
-  }
+}
 
 /* Normalize
 --------------------------------------------- */
@@ -128,19 +128,6 @@ h5, .h5, h6 {
 p {
 	font-family: "Swiss721 BT Light";
 	margin-bottom: 1.5em;
-}
-
-
-@media (min-width: 1440px) {
-	h1 {
-		font-size: 60px;
-	}
-}
-
-@media (min-width: 1600px) {
-	h1 {
-		font-size: 86px;
-	}
 }
 
 /* Grouping content
@@ -752,6 +739,66 @@ textarea {
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
+/* Accordion panel */
+.accordion-container {
+	background: var(--baige);
+	margin: 20px auto;
+	padding: 60px 40px;
+}
+
+.accordion-container .accordions {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.accordion-container .accordion {
+	position: relative;
+	margin: 10px 10px;
+}
+
+/* Accordion label */
+.accordion .label {
+	position: relative;
+	padding: 10px 0;
+	font-size: 30px;
+	color: var(--primary);
+	cursor: pointer;
+}
+
+.accordion .label::after {
+	border: 1px solid var(--primary);
+	border-radius: 50%;
+	content: '+';
+	color: var(--primary);
+	padding: 5px 10px;
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	font-size: 20px;
+	text-align: center;
+	transform: translateY(-50%);
+	width: 38px;
+}
+
+/* Hides accordion content */
+.accordion .content {
+	position: relative;
+	height: 0;
+	font-size: 20px;
+	text-align: justify;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+/* Unhides the content part when active */
+.accordion-container .accordion.active .content {
+	height: auto;
+}
+
+/* Changes from plus sign to negative sign once active */
+.accordion-container .accordion.active .label::after {
+	content: '-';
+}
 
 /* Header
 --------------------------------------------- */
@@ -759,12 +806,8 @@ header.site-header {
 	align-items: center;
 	background-color: var(--primary);
 	display: flex;
-	padding: 30px 15px;
+	padding: 30px 20px;
 }
-
-/* header.entry-header {
-	display: none;
-} */
 
 .site-branding {
 	margin: 0 auto;
@@ -805,23 +848,6 @@ header.site-header {
 	max-width: 1740px;
 	margin: 0 auto;
 	padding: 40px 20px;
-}
-
-@media (min-width: 768px) {
-	.footer-column {
-		width: 50%;;
-	}
-}
-
-@media (min-width: 900px) {
-	.site-info-container {
-		flex-flow: row;
-	}
-	
-	.site-info-container .wp-block-columns,
-	.site-info-container .wp-block-social-links {
-		margin-bottom: 0;
-	}
 }
 
 /* Navigation
@@ -926,48 +952,6 @@ header.site-header {
 	margin-top: 10px;
 	position: absolute;
 	right: 85px;
-}
-
-@media (max-width: 992px) {
-	.menu-main-menu-container {
-		background-color: var(--primary);
-		position: absolute;
-		z-index: 99;
-		margin-top: 80px;
-		width: 100%;
-		left: 0;
-	}
-	
-	.main-navigation {
-		display: flex;
-		justify-content: flex-end;
-	}
-}
-
-@media (min-width: 992px) {
-	.main-navigation {
-		margin-left: 30px;
-	}
-
-	.site-header {
-		padding: 30px 40px;
-	}
-	
-	.menu-toggle {
-		display: none;
-	}
-
-	.main-navigation ul {
-		display: flex;
-	}
-	
-	.cart-icon {
-		right: 60px;
-	}
-	
-	.site-header {
-		padding: 30px 60px;
-	}
 }
 
 .site-main .comment-navigation,
@@ -1159,21 +1143,6 @@ header.site-header {
 	width: 37px;
 }
 
-
-@media (min-width: 600px) {
-	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
-		height: 37px;
-		width: 37px;
-	}
-}
-
-@media (min-width: 992px) {
-	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
-		height: 47px;
-		width: 47px;
-	}
-}
-
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
@@ -1275,23 +1244,91 @@ header.site-header {
 	
 }
 
+@media (min-width: 600px) {
+	/* Social media icons */
+	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
+		height: 37px;
+		width: 37px;
+	}
+}
+
 /* medium */
 @media (min-width: 768px) {
+	/* Site info */
 	.site-info-container {
 		align-items: center;
 		display: flex;
 		flex-wrap: wrap;
 	}
 	
+	/* Footer styles */
 	.footer-column {
 		width: 50%;
 	}
 }
 
+@media (min-width: 900px) {
+	/* Site info */
+	.site-info-container {
+		flex-flow: row;
+	}
+	
+	.site-info-container .wp-block-columns,
+	.site-info-container .wp-block-social-links {
+		margin-bottom: 0;
+	}
+}
+
 /* large */
 @media (min-width: 992px) {
+	/* Navigation */
+	.main-navigation {
+		margin-left: 30px;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+
+	.menu-toggle {
+		display: none;
+	}
+	
+	.cart-icon {
+		right: 60px;
+	}
+
+	/* Header */
+	header.site-header {
+		padding: 30px 60px;
+	}
+
+	/* Footer styles */
 	.footer-column {
 		width: 25%;
+	}
+
+	/* Social media icons */
+	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
+		height: 47px;
+		width: 47px;
+	}
+}
+
+@media (max-width: 992px) {
+	/* Navigation */
+	.main-navigation {
+		display: flex;
+		justify-content: flex-end;
+	}
+	
+	.menu-main-menu-container {
+		background-color: var(--primary);
+		position: absolute;
+		z-index: 99;
+		margin-top: 80px;
+		width: 100%;
+		left: 0;
 	}
 }
 
@@ -1302,10 +1339,16 @@ header.site-header {
 
 /* xx-large */
 @media (min-width: 1400px) {
-	
+	/* Typography */
+	h1, .h1 {
+		font-size: 60px;
+	}
 }
 
 /* xxx-large */
 @media (min-width: 1600px) {
-	
+	/* Typography */
+	h1, .h1 {
+		font-size: 86px;
+	}
 }

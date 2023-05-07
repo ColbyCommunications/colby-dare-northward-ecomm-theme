@@ -77,6 +77,26 @@ if ( post_password_required() ) {
 	<?php the_content(); ?>
 </div>
 
+<?php if( have_rows('accordion') ): ?>
+	<div class="accordion-container">
+		<div class="accordions">
+			<div class="section-title h1"><?php the_field('section_title'); ?></div>
+			<hr />
+			<?php while( have_rows('accordion') ): the_row(); ?>
+				<div class="accordion">
+					<h4 class="label"><?php the_sub_field('accordion_title'); ?></h4>
+					<div class="content"><p><?php the_sub_field('accordion_copy'); ?></p></div> 
+				</div>
+				<hr />
+			<?php endwhile; ?>
+		</div>
+	</div>
+<?php endif; ?>
+
+<div class="additional-content">
+	<?php the_field('additional_content'); ?>
+</div>
+
 <?php do_action( 'woocommerce_after_single_product' ); ?>
 
 
