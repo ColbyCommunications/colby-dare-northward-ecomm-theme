@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # Woocommerce Overrides
 --------------------------------------------------------------*/
-.entry-content .woocommerce {
+.woocommerce div.product {
 	max-width: 1600px;
 	margin: 100px auto 20px auto;
 	padding: 0 20px;
