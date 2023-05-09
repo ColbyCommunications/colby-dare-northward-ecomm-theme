@@ -40,14 +40,6 @@
 .summary.entry-summary form.cart .qib-container + button[type='submit']:not(#qib_id):not(#qib_id) {
 	margin-left: 0;
 }
-/* .woocommerce div.product form.cart div.quantity {
-	float: none;
-}
-
-.woocommerce .quantity .qty {
-	height: 72px;
-	width: 110px;
-} */
 
 /* Products
 --------------------------------------------- */
