@@ -253,3 +253,26 @@ function my_remove_all_product_tabs( $tabs ) {
   unset( $tabs['additional_information'] );    // Remove the additional information tab
   return $tabs;
 }
+
+/**
+ * Woocommerce hand-picked gutenberg block.
+ */
+function hand_picked_product_block( $html, $data, $product ) {
+    global $product;
+
+    $html = '<li class="wc-block-grid__product">';
+    $html .= '<a href="' . $data->permalink . '" class="wc-block-grid__product-link"><div class="image-wrap">
+				' . $data->image . '
+            </div>
+			<span class="product-info">
+				' . $data->title . '
+				' . $data->price . '
+				' . $data->rating . '
+			</span></a>
+			' . $data->button . '
+    ';
+    
+    $html .= '</li>';
+    return $html;
+}
+add_filter( 'woocommerce_blocks_product_grid_item_html', 'hand_picked_product_block', 10, 3);

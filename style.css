@@ -56,6 +56,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--secondary: #A0A9AF;
 	--dk-blue: #12223E;
 	--baige: #FBF8EA;
+	--lt-gray: #DEE4E2;
 	--tan: #C0885B;
 }
 
@@ -831,6 +832,10 @@ header.site-header {
 	color: #fff;
 }
 
+.site-footer a:hover {
+	color: var(--lt-gray);
+}
+
 .footer-column {
 	padding: 0 20px;
 }
@@ -914,6 +919,10 @@ header.site-header {
 	color: #fff;
 }
 
+.nav-menu li a:hover {
+	color: var(--lt-gray);
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
@@ -951,7 +960,19 @@ header.site-header {
 	width: 35px;
 	margin-top: 10px;
 	position: absolute;
-	right: 85px;
+	right: 106px;
+}
+
+a.cart-count {
+	background-color: var(--lt-gray);
+	border: 1px solid #fff;
+	border-radius: 50%;
+	color: var(--primary);
+	display: flex;
+	float: right;
+	height: 25px;
+	justify-content: center;
+	width: 25px;
 }
 
 .site-main .comment-navigation,
@@ -1244,14 +1265,6 @@ header.site-header {
 	
 }
 
-@media (min-width: 600px) {
-	/* Social media icons */
-	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
-		height: 37px;
-		width: 37px;
-	}
-}
-
 /* medium */
 @media (min-width: 768px) {
 	/* Site info */
@@ -1295,7 +1308,7 @@ header.site-header {
 	}
 	
 	.cart-icon {
-		right: 60px;
+		right: 80px;
 	}
 
 	/* Header */
@@ -1306,12 +1319,6 @@ header.site-header {
 	/* Footer styles */
 	.footer-column {
 		width: 25%;
-	}
-
-	/* Social media icons */
-	.wp-block-social-links.is-style-logos-only .wp-social-link svg {
-		height: 47px;
-		width: 47px;
 	}
 }
 
