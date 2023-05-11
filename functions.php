@@ -187,6 +187,7 @@ function dare_north_ward_scripts() {
 	wp_style_add_data( 'dare-north-ward-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'dare-north-ward-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'dare-north-ward-accordion', get_template_directory_uri() . '/js/accordion.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -252,3 +253,26 @@ function my_remove_all_product_tabs( $tabs ) {
   unset( $tabs['additional_information'] );    // Remove the additional information tab
   return $tabs;
 }
+
+/**
+ * Woocommerce hand-picked gutenberg block.
+ */
+function hand_picked_product_block( $html, $data, $product ) {
+    global $product;
+
+    $html = '<li class="wc-block-grid__product">';
+    $html .= '<a href="' . $data->permalink . '" class="wc-block-grid__product-link"><div class="image-wrap">
+				' . $data->image . '
+            </div>
+			<span class="product-info">
+				' . $data->title . '
+				' . $data->price . '
+				' . $data->rating . '
+			</span></a>
+			' . $data->button . '
+    ';
+    
+    $html .= '</li>';
+    return $html;
+}
+add_filter( 'woocommerce_blocks_product_grid_item_html', 'hand_picked_product_block', 10, 3);

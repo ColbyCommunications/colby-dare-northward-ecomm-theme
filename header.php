@@ -46,7 +46,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<a href="/cart"><span class="cart-icon"></span></a>
+			<a class="cart-count" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?><span class="cart-icon"></span></a>
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
