@@ -170,6 +170,26 @@
 	margin-bottom: 30px;
 }
 
+/* Account login */
+.woocommerce-account .woocommerce {
+	color: white;
+	padding: 40px;
+}
+.woocommerce-MyAccount-navigation a,
+.woocommerce-MyAccount-content a {
+	color: white;
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-content a:hover {
+	color: var(--lt-gray);
+}
+
+.woocommerce form.login {
+	max-width: 600px;
+    margin: 0 auto;
+}
+
 @media (min-width: 769px) {
     /* Product image container on PDP */
 	.woocommerce-product-gallery {
