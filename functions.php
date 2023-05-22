@@ -106,7 +106,7 @@ function dare_north_ward_setup() {
 	 */
 	add_theme_support('editor-color-palette',
      
-     array(
+    array(
          array(
              'name' => esc_html__('White', 'dare-north-ward'),
              'slug' => 'white',
