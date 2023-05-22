@@ -172,12 +172,12 @@
 
 /* Account login */
 .woocommerce-account .woocommerce {
-	color: white;
+	color: #fff;
 	padding: 40px;
 }
 .woocommerce-MyAccount-navigation a,
 .woocommerce-MyAccount-content a {
-	color: white;
+	color: #fff;
 }
 
 .woocommerce-MyAccount-navigation a:hover,
