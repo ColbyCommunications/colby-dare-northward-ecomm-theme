@@ -54,10 +54,108 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--primary: #1E2D37;
 	--secondary: #A0A9AF;
-	--dk-blue: #12223E;
+	--amber: #FCB900;
 	--baige: #FBF8EA;
+	--cyan-blue: #0693E3;
+	--dk-blue: #12223E;
+	--green: #00D084;
 	--lt-gray: #DEE4E2;
+	--lt-green: #7bdcb5;
+	--red: #CF2E2E;
 	--tan: #C0885B;
+}
+
+.bg-lt-gray {
+	background-color: var(--lt-gray);
+}
+
+.bg-baige {
+	background-color: var(--baige);
+}
+
+/*--------------------------------------------------------------
+# Editor Color Palette
+--------------------------------------------------------------*/
+/* Text colors */
+.has-blue-color {
+	color: var(--dk-blue);
+}
+
+.has-blue-gray-color {
+	color: var(--primary);
+}
+
+.has-gray-color {
+	color: var(--secondary);
+}
+
+.has-baige-color {
+	color: var(--baige);
+}
+
+.has-brown-color {
+	color: var(--tan);
+}
+
+.has-red-color {
+	color: var(--red);
+}
+
+.has-amber-color {
+	color: var(--amber);
+}
+
+.has-light-green-color {
+	color: var(--lt-green);
+}
+
+.has-green-color {
+	color: var(--green);
+}
+
+.has-cyan-blue-color {
+	color: var(--cyan-blue);
+}
+
+/* Background colors */
+.has-blue-background-color {
+	background-color: var(--dk-blue);
+}
+
+.has-blue-gray-background-color {
+	background-color: var(--primary);
+}
+
+.has-gray-background-color {
+	background-color: var(--secondary);
+}
+
+.has-baige-background-color {
+	background-color: var(--baige);
+}
+
+.has-brown-background-color {
+	background-color: var(--tan);
+}
+
+.has-red-background-color {
+	background-color: var(--red);
+}
+
+.has-amber-background-color {
+	background-color: var(--amber);
+}
+
+.has-light-green-background-color {
+	background-color: var(--lt-green);
+}
+
+.has-green-background-color {
+	background-color: var(--green);
+}
+
+.has-cyan-blue-background-color {
+	background-color: var(--cyan-blue);
 }
 
 /* Normalize
@@ -731,7 +829,7 @@ textarea {
 }
 
 .container-xxl {
-	max-width: 1740px;
+	max-width: 1600px;
 	margin-left: auto !important;
 	margin-right: auto !important;
 	padding: 0 20px;
@@ -1167,7 +1265,6 @@ a.cart-count {
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
-
 /* Accessibility
 --------------------------------------------- */
 
@@ -1250,6 +1347,10 @@ a.cart-count {
 
 .padding-20 {
 	padding: 0 20px;
+}
+
+.padding-40 {
+	padding: 40px;
 }
 
 

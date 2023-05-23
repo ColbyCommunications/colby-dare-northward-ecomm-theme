@@ -99,6 +99,76 @@ function dare_north_ward_setup() {
 			'flex-height' => true,
 		)
 	);
+
+	/**
+	 * Editor Color Palette
+	 *
+	 */
+	add_theme_support('editor-color-palette',
+     
+    array(
+         array(
+             'name' => esc_html__('White', 'dare-north-ward'),
+             'slug' => 'white',
+             'color' => '#ffffff',
+         ),
+         array(
+            'name' => esc_html__('Black', 'dare-north-ward'),
+            'slug' => 'black',
+            'color' => '#000000',
+         ),
+         array(
+            'name' => esc_html__('Dark Blue', 'dare-north-ward'),
+            'slug' => 'blue',
+            'color' => '#12223E',
+         ),
+         array(
+            'name' => esc_html__('Blue Gray', 'dare-north-ward'),
+            'slug' => 'blue-gray',
+            'color' => '#1E2D37',
+         ),
+         array(
+            'name' => esc_html__('Gray', 'dare-north-ward'),
+            'slug' => 'gray',
+            'color' => '#A0A9AF',
+         ),
+         array(
+            'name' => esc_html__('Baige', 'dare-north-ward'),
+            'slug' => 'baige',
+            'color' => '#FBF8EA',
+         ),
+         array(
+            'name' => esc_html__('Brown', 'dare-north-ward'),
+            'slug' => 'brown',
+            'color' => '#C0885B',
+         ),
+         array(
+            'name' => esc_html__('Red', 'dare-north-ward'),
+            'slug' => 'red',
+            'color' => '#cf2e2e',
+         ),
+         array(
+            'name' => esc_html__('Amber', 'dare-north-ward'),
+            'slug' => 'amber',
+            'color' => '#fcb900',
+         ),
+         array(
+            'name' => esc_html__('Light Green', 'dare-north-ward'),
+            'slug' => 'light-green',
+            'color' => '#7bdcb5',
+         ),
+         array(
+            'name' => esc_html__('Green', 'dare-north-ward'),
+            'slug' => 'green',
+            'color' => '#00d084',
+         ),
+         array(
+            'name' => esc_html__('Cyan Blue', 'dare-north-ward'),
+            'slug' => 'cyan-blue',
+            'color' => '#0693e3',
+         ),
+        )
+    );
 }
 add_action( 'after_setup_theme', 'dare_north_ward_setup' );
 
@@ -214,12 +284,6 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Custom Gutenburg blocks.
- */
-
-require get_template_directory() . '/inc/gutenberg.php';
 
 /**
  * Load Jetpack compatibility file.
