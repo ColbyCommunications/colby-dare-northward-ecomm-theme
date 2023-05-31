@@ -69,10 +69,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	background-color: var(--lt-gray);
 }
 
-.bg-baige {
-	background-color: var(--baige);
-}
-
 /*--------------------------------------------------------------
 # Editor Color Palette
 --------------------------------------------------------------*/
@@ -936,6 +932,7 @@ header.site-header {
 
 .footer-column {
 	padding: 0 20px;
+	width: 50%;
 }
 
 .footer-column:last-of-type {
@@ -948,6 +945,9 @@ header.site-header {
 }
 
 .site-info-container {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
 	max-width: 1740px;
 	margin: 0 auto;
 	padding: 40px 20px;
@@ -1345,10 +1345,17 @@ a.cart-count {
 	margin-top: 0;
 }
 
+.pd-0,
+.padding-0 {
+	padding: 0;
+}
+
+.pd-20,
 .padding-20 {
 	padding: 0 20px;
 }
 
+.pd-40,
 .padding-40 {
 	padding: 40px;
 }
@@ -1357,28 +1364,21 @@ a.cart-count {
 /* Media Queries
 --------------------------------------------- */
 /* x-small */
-@media (max-width: 576px) {
-	
+@media (max-width: 450px) {
+	/* Footer styles */
+	.footer-column {
+		width: 100%;
+	}
 }
 
 /* small */
-@media (min-width: 576px) {
+@media (max-width: 576px) {
 	
 }
 
 /* medium */
 @media (min-width: 768px) {
-	/* Site info */
-	.site-info-container {
-		align-items: center;
-		display: flex;
-		flex-wrap: wrap;
-	}
 	
-	/* Footer styles */
-	.footer-column {
-		width: 50%;
-	}
 }
 
 @media (min-width: 900px) {
