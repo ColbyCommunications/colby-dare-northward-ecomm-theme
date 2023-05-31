@@ -73,7 +73,7 @@
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover,
 :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover {
 	background: var(--secondary);
-    color: var(--primary);
+	color: var(--primary);
 }
 
 /* Products
@@ -230,8 +230,8 @@
 	/* Product grid */
 	.woocommerce ul.products[class*=columns-] li.product,
 	.woocommerce-page ul.products[class*=columns-] li.product {
-			clear: none;
-		    margin: 0 1% 1em;
+		clear: none;
+		margin: 0 1% 1em;
 	}
 }
 
