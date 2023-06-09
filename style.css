@@ -532,7 +532,7 @@ optgroup,
 textarea {
 	color: var(--dk-blue);
 	font-family: "Swiss721 BT Regular";
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.5;
 }
 
@@ -1260,6 +1260,19 @@ a.cart-count {
 .wp-block-social-links.is-style-logos-only .wp-social-link svg {
 	height: 37px;
 	width: 37px;
+}
+
+/* YouTube Embed
+--------------------------------------------- */
+.wp-block-embed.full-width .wp-block-embed__wrapper {
+	padding-bottom: 56.25%;
+	width: 100%;
+}
+
+.wp-block-embed.full-width .wp-block-embed__wrapper iframe {
+	height: 100%;
+	position: absolute;
+	width: 100%;
 }
 
 /*--------------------------------------------------------------
