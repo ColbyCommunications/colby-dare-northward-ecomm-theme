@@ -221,6 +221,22 @@
 	margin: 0 auto;
 }
 
+/* Cart Page
+--------------------------------------------- */
+/* Coupon code imput */
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	padding: 12px 10px;
+}
+
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+	width: 50%;
+}
+
 @media (max-width: 768px) {
 	/* Product grid */
 	.woocommerce ul.products[class*=columns-] li.product,
