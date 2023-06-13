@@ -17,6 +17,14 @@
 	clear: both;
 }
 
+.woocommerce-info {
+	border-top-color: var(--primary);
+}
+
+.woocommerce-info::before {
+	color: var(--tan);
+}
+
 /* Buttons
 --------------------------------------------- */
 /* Proceed to checkout */
@@ -39,6 +47,33 @@
 /* QTY increment counter */
 .summary.entry-summary form.cart .qib-container + button[type='submit']:not(#qib_id):not(#qib_id) {
 	margin-left: 0;
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button {
+	background: var(--tan);
+	border-radius: 0;
+	color: #fff;
+	font-size: 1.125em;
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button:hover,
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button:hover,
+:where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button:hover {
+	background: var(--secondary);
+	color: var(--primary);
 }
 
 /* Products
@@ -112,6 +147,7 @@
 /* Product grid */
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
 	background-color: var(--lt-gray);
+	margin: 0 1% 1.5em;
 }
 
 .wc-block-grid__product .wc-block-grid__product-image:not(.wc-block-components-product-image) {
@@ -172,12 +208,7 @@
 
 /* Account login */
 .woocommerce-account .woocommerce {
-	color: #fff;
 	padding: 40px;
-}
-.woocommerce-MyAccount-navigation a,
-.woocommerce-MyAccount-content a {
-	color: #fff;
 }
 
 .woocommerce-MyAccount-navigation a:hover,
@@ -188,6 +219,31 @@
 .woocommerce form.login {
 	max-width: 600px;
 	margin: 0 auto;
+}
+
+/* Cart Page
+--------------------------------------------- */
+/* Coupon code imput */
+#add_payment_method table.cart td.actions .coupon .input-text,
+.woocommerce-cart table.cart td.actions .coupon .input-text,
+.woocommerce-checkout table.cart td.actions .coupon .input-text {
+	padding: 12px 10px;
+}
+
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce-page #content table.cart td.actions .input-text,
+.woocommerce-page table.cart td.actions .input-text {
+	width: 50%;
+}
+
+@media (max-width: 768px) {
+	/* Product grid */
+	.woocommerce ul.products[class*=columns-] li.product,
+	.woocommerce-page ul.products[class*=columns-] li.product {
+		clear: none;
+		margin: 0 1% 1em;
+	}
 }
 
 @media (min-width: 769px) {
