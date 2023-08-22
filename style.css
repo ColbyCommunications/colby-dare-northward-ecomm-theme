@@ -775,6 +775,7 @@ textarea {
 .button-right-angle a {
 	background: var(--tan);
 	border-radius: 0;
+	padding: 11px 25px;
 }
 
 .button-right-angle:hover a {
