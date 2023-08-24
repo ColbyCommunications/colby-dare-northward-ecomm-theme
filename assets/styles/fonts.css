@@ -40,20 +40,28 @@
 
 @font-face {
 	font-family: "Victor Serif Regular";
-	src: url("../fonts/VictorSerif_Regular.otf");
+	src: url("../fonts/VictorSerif_Regular.otf") format('opentype'),
+	url("../fonts/VictorSerif_Regular.woff") format('woff'),
+	url("../fonts/VictorSerif_Regular.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "Victor Serif Italic";
-	src: url("../fonts/VictorSerif_Regular_Italic.otf");
+	src: url("../fonts/VictorSerif_Regular_Italic.otf") format('opentype'),
+	url("../fonts/VictorSerif_Regular_Italic.woff") format('woff'),
+	url("../fonts/VictorSerif_Regular_Italic.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "Victor Serif Thin";
-	src: url("../fonts/VictorSerif_Thin.otf");
+	src: url("../fonts/VictorSerif_Thin.otf") format('opentype'),
+	url("../fonts/VictorSerif_Thin.woff") format('woff'),
+	url("../fonts/VictorSerif_Thin.woff2") format('woff2');
 }
 
 @font-face {
 	font-family: "Victor Serif Thin Italic";
-	src: url("../fonts/VictorSerif_Thin_Italic.otf");
+	src: url("../fonts/VictorSerif_Thin_Italic.otf") format('opentype'),
+	url("../fonts/VictorSerif_Thin_Italic.woff") format('woff'),
+	url("../fonts/VictorSerif_Thin_Italic.woff2") format('woff2');
 }
