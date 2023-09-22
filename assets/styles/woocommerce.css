@@ -1,6 +1,13 @@
 /*--------------------------------------------------------------
 # Woocommerce Overrides
 --------------------------------------------------------------*/
+.woocommerce .site-main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
 .woocommerce div.product {
 	max-width: 1600px;
 	margin: 100px auto 20px auto;
@@ -23,6 +30,21 @@
 
 .woocommerce-info::before {
 	color: var(--tan);
+}
+
+.woocommerce .woocommerce-breadcrumb {
+	color: var(--primary);
+}
+
+.woocommerce .woocommerce-breadcrumb a {
+	color: var(--secondary);
+}
+
+.woocommerce-ordering select {
+	border: solid 1px var(--primary);
+	border-radius: 16px;
+	font-family: "Swiss721 BT Light";
+	padding: 0 5px;
 }
 
 /* Buttons
@@ -162,12 +184,20 @@
 	row-gap: 1rem;
 }
 
+.woocommerce ul.products li.product a img {
+	margin-bottom: 0;
+}
+
 /* Handpicked product block */
 .wp-block-handpicked-products {
 	max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
+}
+
+.wp-block-handpicked-products.pd-0 {
+	padding: 0;
 }
 
 .wp-block-handpicked-products .wc-block-grid__product-image {
@@ -235,6 +265,19 @@
 .woocommerce-page #content table.cart td.actions .input-text,
 .woocommerce-page table.cart td.actions .input-text {
 	width: 50%;
+}
+
+/* Fix for footer column on woocommerce shop page */
+.woocommerce-shop .woocommerce-LoopProduct-link.woocommerce-loop-product__link .footer-column {
+	width: 100%;
+}
+
+/* Fix for footer column on woocommerce shop page */
+@media (min-width: 450px) and (max-width: 992px) {
+	.woocommerce-shop .woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+		display: block;
+		width: 50%;
+	}
 }
 
 @media (max-width: 768px) {
