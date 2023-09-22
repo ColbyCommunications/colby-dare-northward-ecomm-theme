@@ -37,11 +37,11 @@
 }
 
 .woocommerce .woocommerce-breadcrumb a {
-    color: var(--secondary);
+	color: var(--secondary);
 }
 
 .woocommerce-ordering select {
-    border: solid 1px var(--primary);
+	border: solid 1px var(--primary);
 	border-radius: 16px;
 	font-family: "Swiss721 BT Light";
 	padding: 0 5px;

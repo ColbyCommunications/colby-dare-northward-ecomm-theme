@@ -346,15 +346,14 @@ add_filter( 'woocommerce_blocks_product_grid_item_html', 'hand_picked_product_bl
  */
 add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
 function woo_custom_breadrumb_home_url() {
-    return '/collections';
+	return '/collections';
 }
 
-add_filter( 'woocommerce_breadcrumb_defaults', 'woo_change_breadcrumb_home_text' );
 /**
  * Change the breadcrumb home text from "Home" to "Collections".
  */
+add_filter( 'woocommerce_breadcrumb_defaults', 'woo_change_breadcrumb_home_text' );
 function woo_change_breadcrumb_home_text( $defaults ) {
 	$defaults['home'] = 'Collections';
-
 	return $defaults;
 }
