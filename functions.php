@@ -341,6 +341,8 @@ function hand_picked_product_block( $html, $data, $product ) {
 }
 add_filter( 'woocommerce_blocks_product_grid_item_html', 'hand_picked_product_block', 10, 3);
 
+add_filter( 'auto_core_update_send_email', '__return_false' );
+
 /**
  * Replace the breadcrumb home link URL
  */
