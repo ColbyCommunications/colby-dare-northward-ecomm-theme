@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------
 # Woocommerce Overrides
 --------------------------------------------------------------*/
-.woocommerce .site-main {
+.woocommerce .site-main,
+.woocommerce-page .site-main {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -41,8 +42,7 @@
 }
 
 .woocommerce-ordering select {
-	border: solid 1px var(--primary);
-	border-radius: 16px;
+	border: 0;
 	font-family: "Swiss721 BT Light";
 	padding: 0 5px;
 }

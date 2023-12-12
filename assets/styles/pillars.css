@@ -1,5 +1,6 @@
 /* Our Pillars section */
-.pillars {
+.pillars,
+.our-pillars {
 	justify-content: center;
 	padding: 40px 20px;
 }
@@ -24,7 +25,8 @@
 	text-decoration-thickness: 3px !important;
 }
 
-.pillars .wp-block-columns {
+.pillars .wp-block-columns,
+.our-pillars .wp-block-columns {
 	justify-content: center;
 }
 
@@ -34,19 +36,59 @@
 	margin-right: 15px;
 }
 
+/* New Pillars section */
+.our-pillars > div {
+	border: 5px solid var(--dk-blue);
+	max-width: 1600px;
+	padding: 20px;
+	position: relative;
+}
+
+.our-pillars h3 {
+	font-family: "Victor Serif Thin Italic";
+}
+
+.our-pillars h3 strong {
+	font-family: "Victor Serif Bold Italic";
+}
+
+.our-pillars .wp-block-image {
+	align-self: center;
+	background-color: var(--baige);
+	padding: 0 20px;
+	position: absolute;
+	bottom: -50px;
+}
+
+.our-pillars .wp-block-column {
+	display: flex;
+	flex-flow: column;
+}
+
+@media (min-width: 782px) {
+	.our-pillars h3 {
+		font-size: 30px;
+	}
+}
 
 @media (min-width: 782px) and (max-width: 1200px) {
-	.pillars .wp-block-columns {
+	.pillars .wp-block-columns,
+	.our-pillars .wp-block-columns {
 		flex-wrap: wrap !important;
 	}
 	
 	.pillars .wp-block-column {
 		flex-basis: 50% !important;
 	}
+
+	.our-pillars .wp-block-column {
+		flex-basis: 30% !important;
+	}
 }
 
 @media (min-width: 768px) {
-	.pillars {
+	.pillars,
+	.our-pillars {
 		padding: 80px 40px;
 	}
 	
