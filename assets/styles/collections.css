@@ -19,10 +19,6 @@
     align-items: center;
 }
 
-.collections .wc-block-grid__product-image {
-	margin-bottom: -40px !important;
-}
-
 .collections .wp-block-handpicked-products {
 	padding: 0;
 }
@@ -52,7 +48,7 @@
 	.collections figure {
 		margin-bottom: -60px;
 	}
-	
+
 	.collections .container-xxl {
 		margin: 60px auto;
 	}
@@ -62,7 +58,7 @@
 		margin-bottom: -92px !important;
 	}
 
-    .collections .wc-block-grid__product-image img {
+	.collections .wc-block-grid__product-image img {
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
@@ -77,7 +73,7 @@
 		writing-mode: vertical-rl;
 		
 	}
-	
+
 	.collections p {
 		max-width: 410px;
 		padding: 20px 0;
