@@ -225,7 +225,7 @@
 
 .woocommerce-notices-wrapper {
 	max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .woocommerce-notices-wrapper .woocommerce-error {
@@ -242,10 +242,6 @@
 }
 
 /* Account login */
-.woocommerce-account .woocommerce {
-	padding: 40px;
-}
-
 .woocommerce-MyAccount-navigation a:hover,
 .woocommerce-MyAccount-content a:hover {
 	color: var(--lt-gray);
