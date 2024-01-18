@@ -254,6 +254,10 @@
 
 /* Cart Page
 --------------------------------------------- */
+.woocommerce-cart .entry-content {
+	margin-top: 40px;
+}
+
 /* Coupon code imput */
 #add_payment_method table.cart td.actions .coupon .input-text,
 .woocommerce-cart table.cart td.actions .coupon .input-text,
@@ -338,4 +342,24 @@
 	.woo-variation-swatches .variable-items-wrapper {
 		justify-content: flex-end;
 	}
+}
+
+/* Checkout Page
+--------------------------------------------- */
+.woocommerce-checkout .woocommerce-billing-fields h3,
+.woocommerce-checkout .woocommerce-shipping-fields h3,
+.woocommerce-checkout #order_review_heading {
+	font-size: 20px;
+}
+
+.woocommerce-checkout #ship-to-different-address-checkbox {
+	width: 20px;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	background-color: var(--primary);
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order:hover {
+	background-color: var(--secondary);
 }

@@ -742,7 +742,7 @@ textarea {
 	color: var(--primary);
 	border: 1px solid var(--secondary);
 	border-radius: 3px;
-	padding: 3px;
+	padding: 10px;
 }
 
 input[type="text"]:focus,
