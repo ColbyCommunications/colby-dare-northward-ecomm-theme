@@ -225,6 +225,15 @@ p {
 	margin-bottom: 1.5em;
 }
 
+h2 strong,
+h2 b,
+h4 strong,
+h4 b,
+p strong,
+p b {
+	font-family: "Swiss721 BT Bold";
+}
+
 /* Grouping content
 	 ========================================================================== */
 
@@ -733,7 +742,7 @@ textarea {
 	color: var(--primary);
 	border: 1px solid var(--secondary);
 	border-radius: 3px;
-	padding: 3px;
+	padding: 10px;
 }
 
 input[type="text"]:focus,

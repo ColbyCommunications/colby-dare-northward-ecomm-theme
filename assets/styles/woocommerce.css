@@ -134,14 +134,14 @@
 
 .product-info {
 	background-color: var(--primary);
+	bottom: 15%;
 	color: #fff;
 	display: none;
 	font-family: "Victor Serif Italic";
 	padding: 0 20px;
 	position: absolute;
 	text-align: left;
-	top: 50%;
-    width: 75%;
+	width: 75%;
 }
 
 .woocommerce-loop-product__link:hover .product-info,
@@ -158,7 +158,7 @@
 .woocommerce ul.products li.product h3 {
 	font-family: "Victor Serif Italic";
 	font-size: 23px;
-    padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .woocommerce ul.products li.product .price {
@@ -167,7 +167,8 @@
 }
 
 /* Product grid */
-.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
 	background-color: var(--lt-gray);
 	margin: 0 1% 1.5em;
 }
@@ -181,7 +182,11 @@
 }
 
 .wc-block-grid__products {
-	row-gap: 1rem;
+	row-gap: 0;
+}
+
+.wc-block-grid__product {
+	border-bottom: 8px solid transparent;
 }
 
 .woocommerce ul.products li.product a img {
@@ -200,7 +205,7 @@
 	padding: 0;
 }
 
-.wp-block-handpicked-products .wc-block-grid__product-image {
+.wc-block-grid__products .wc-block-grid__product-image img {
 	background-color: var(--lt-gray);
 }
 
@@ -220,7 +225,7 @@
 
 .woocommerce-notices-wrapper {
 	max-width: 600px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .woocommerce-notices-wrapper .woocommerce-error {
@@ -237,10 +242,6 @@
 }
 
 /* Account login */
-.woocommerce-account .woocommerce {
-	padding: 40px;
-}
-
 .woocommerce-MyAccount-navigation a:hover,
 .woocommerce-MyAccount-content a:hover {
 	color: var(--lt-gray);
@@ -253,6 +254,10 @@
 
 /* Cart Page
 --------------------------------------------- */
+.woocommerce-cart .entry-content {
+	margin-top: 40px;
+}
+
 /* Coupon code imput */
 #add_payment_method table.cart td.actions .coupon .input-text,
 .woocommerce-cart table.cart td.actions .coupon .input-text,
@@ -270,14 +275,6 @@
 /* Fix for footer column on woocommerce shop page */
 .woocommerce-shop .woocommerce-LoopProduct-link.woocommerce-loop-product__link .footer-column {
 	width: 100%;
-}
-
-/* Fix for footer column on woocommerce shop page */
-@media (min-width: 450px) and (max-width: 992px) {
-	.woocommerce-shop .woocommerce-LoopProduct-link.woocommerce-loop-product__link {
-		display: block;
-		width: 50%;
-	}
 }
 
 @media (max-width: 768px) {
@@ -309,13 +306,13 @@
 		font-size: 30px;
 	}
 	
-    /* Product image viewport on PDP */
+	/* Product image viewport on PDP */
 	.woocommerce-product-gallery figure,
 	.woocommerce-product-gallery .flex-viewport {
 		width: 90%;
 	}
 	
-    /* Product image on PDP */
+	/* Product image on PDP */
 	.woocommerce #content div.product div.images,
 	.woocommerce div.product div.images,
 	.woocommerce-page #content div.product div.images,
@@ -337,7 +334,7 @@
 	
 	/* Product price on PDP */
 	.woocommerce div.product p.price,
-    .woocommerce div.product span.price {
+	.woocommerce div.product span.price {
 		font-size: 56px;
 	}
 	
@@ -345,4 +342,24 @@
 	.woo-variation-swatches .variable-items-wrapper {
 		justify-content: flex-end;
 	}
+}
+
+/* Checkout Page
+--------------------------------------------- */
+.woocommerce-checkout .woocommerce-billing-fields h3,
+.woocommerce-checkout .woocommerce-shipping-fields h3,
+.woocommerce-checkout #order_review_heading {
+	font-size: 20px;
+}
+
+.woocommerce-checkout #ship-to-different-address-checkbox {
+	width: 20px;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	background-color: var(--primary);
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order:hover {
+	background-color: var(--secondary);
 }
