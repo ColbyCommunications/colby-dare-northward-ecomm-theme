@@ -663,6 +663,10 @@ table {
 	width: 100%;
 }
 
+.wp-block-table {
+	font-family: "Swiss721 BT Light";
+}
+
 /* Links
 --------------------------------------------- */
 a {
