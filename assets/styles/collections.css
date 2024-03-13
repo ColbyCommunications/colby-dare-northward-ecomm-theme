@@ -66,7 +66,8 @@
 }
 
 @media (min-width: 992px) {
-	.collections h2 {
+	.collections h2,
+	.collections1-1 h2 {
 		line-height: .75;
 		margin: 0;
 		transform: rotate(180deg);
@@ -85,13 +86,15 @@
 }
 
 @media (min-width: 1440px) {
-	.collections h2 {
+	.collections h2,
+	.collections1-1 h2 {
 		font-size: 60px;
 	}
 }
 
 @media (min-width: 1600px) {
-	.collections h2 {
+	.collections h2,
+	.collections1-1 h2 {
 		font-size: 86px;
 	}
 
