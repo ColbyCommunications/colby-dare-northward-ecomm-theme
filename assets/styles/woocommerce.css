@@ -379,3 +379,7 @@
 .woocommerce #payment #place_order, .woocommerce-page #payment #place_order:hover {
 	background-color: var(--secondary);
 }
+
+ins {
+	background: none;
+}
