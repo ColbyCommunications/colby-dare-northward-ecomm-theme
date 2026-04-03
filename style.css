@@ -1498,3 +1498,7 @@ a.cart-count {
 		font-size: 86px;
 	}
 }
+
+ins {
+	background: none;
+}
